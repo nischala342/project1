@@ -1,0 +1,190 @@
+.projects-container {
+  padding: 100px 2rem 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.projects-header h2 {
+  color: white;
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.projects-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-size: 1rem;
+}
+
+.create-project-button {
+  padding: 0.75rem 1.5rem;
+  background: rgba(81, 207, 102, 0.3);
+  border: 2px solid rgba(81, 207, 102, 0.5);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.create-project-button:hover {
+  background: rgba(81, 207, 102, 0.5);
+  border-color: rgba(81, 207, 102, 0.7);
+  transform: translateY(-2px);
+}
+
+.loading,
+.no-projects {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.no-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.create-first-project-button {
+  padding: 0.75rem 1.5rem;
+  background: rgba(81, 207, 102, 0.3);
+  border: 2px solid rgba(81, 207, 102, 0.5);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.create-first-project-button:hover {
+  background: rgba(81, 207, 102, 0.5);
+  border-color: rgba(81, 207, 102, 0.7);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-key {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+}
+
+.role-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.role-admin {
+  background: rgba(81, 207, 102, 0.3);
+  color: #51cf66;
+  border: 1px solid rgba(81, 207, 102, 0.5);
+}
+
+.role-manager {
+  background: rgba(74, 144, 226, 0.3);
+  color: #4a90e2;
+  border: 1px solid rgba(74, 144, 226, 0.5);
+}
+
+.role-contributor {
+  background: rgba(255, 211, 59, 0.3);
+  color: #ffd43b;
+  border: 1px solid rgba(255, 211, 59, 0.5);
+}
+
+.role-viewer {
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-name {
+  color: white;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.project-description {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-date {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+}
+
+.error-message {
+  background: rgba(255, 107, 107, 0.2);
+  color: #ff6b6b;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

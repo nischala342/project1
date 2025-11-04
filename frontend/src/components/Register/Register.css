@@ -1,0 +1,142 @@
+.auth-container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  max-width: 420px;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.auth-branding {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.auth-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.auth-logo svg {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.auth-app-name {
+  margin: 0 0 0.25rem 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.auth-tagline {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.auth-container h2 {
+  margin: 0 0 1rem 0;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.error-message {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.2);
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.auth-button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.auth-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toggle-text {
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.toggle-link {
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.toggle-link:hover {
+  color: white;
+}
+
